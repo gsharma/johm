@@ -14,14 +14,14 @@ import redis.clients.johm.JOhmUtils.JOhmCollectionDataType;
  * RedisArray is a JOhm-internal 1-Dimensional Array implementation to serve as
  * a proxy for the Redis persisted array. The backing Redis persistence model is
  * that of a list.
- * 
+ *
  * This is a special case of JOhm collections and is treated different from
  * others primarily due to the non-growable nature of the static-array data
  * structure. As a consequence, we will not prevent JOhm users from doing their
  * own array allocation using the 'new' keyword. This mode of usage makes the
  * RedisArray somewhat of a bridge case between say an Attribute and a dynamic
  * collection like RedisList.
- * 
+ *
  * RedisArray does not support null data elements.
  */
 public class RedisArray<T> {

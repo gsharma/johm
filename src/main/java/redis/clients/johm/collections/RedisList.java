@@ -20,7 +20,7 @@ import redis.clients.johm.JOhmUtils.JOhmCollectionDataType;
  * network traffic. It does a best-effort job of minimizing list entity
  * staleness but does so without any locking and is not thread-safe. Only add
  * and remove operations trigger a remote-sync of local internal storage.
- * 
+ *
  * RedisList does not support null elements.
  */
 public class RedisList<T> implements java.util.List<T> {

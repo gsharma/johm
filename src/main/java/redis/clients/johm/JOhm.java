@@ -40,7 +40,7 @@ public final class JOhm {
 
     /**
      * Load the model persisted in Redis looking it up by its id and Class type.
-     * 
+     *
      * @param <T>
      * @param clazz
      * @param id
@@ -82,7 +82,7 @@ public final class JOhm {
      * Search a Model in redis index using its attribute's given name/value
      * pair. This can potentially return more than 1 matches if some indexed
      * Model's have identical attributeValue for given attributeName.
-     * 
+     *
      * @param clazz
      *            Class of Model annotated-type to search
      * @param attributeName
@@ -139,7 +139,7 @@ public final class JOhm {
      * Save given model to Redis. By default, this does not save all its child
      * annotated-models. If hierarchical persistence is desirable, use the
      * overloaded save interface.
-     * 
+     *
      * @param <T>
      * @param model
      * @return
@@ -249,7 +249,7 @@ public final class JOhm {
     /**
      * Delete Redis-persisted model as represented by the given model Class type
      * and id.
-     * 
+     *
      * @param clazz
      * @param id
      * @return
@@ -335,7 +335,7 @@ public final class JOhm {
 
     /**
      * Inject JedisPool into JOhm. This is a mandatory JOhm setup operation.
-     * 
+     *
      * @param jedisPool
      */
     public static void setPool(final JedisPool jedisPool) {
