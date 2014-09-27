@@ -2,7 +2,7 @@ package redis.clients.johm;
 
 /**
  * JOhm error dictionary to aggregate all JOhmException metadata in one place for
- * allowing clients to setup programmatic response tactics and also for easy reference. 
+ * allowing clients to setup programmatic response tactics and also for easy reference.
  */
 public enum JOhmExceptionMeta {
     GENERIC_EXCEPTION("Generic catch-all exception"),
